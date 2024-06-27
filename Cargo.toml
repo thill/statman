@@ -1,0 +1,22 @@
+[package]
+name = "statman"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Eric Thill"]
+repository = "https://github.com/thill/statman"
+description = "Stat Manager"
+keywords = ["statistics", "monitoring"]
+categories = ["caching", "concurrency"]
+exclude = ["Cargo.lock"]
+
+[dependencies]
+atomic_float = "1.0.0"
+chrono = "0.4.38"
+hdrhistogram = "7.5.4"
+once_cell = "1.19.0"
+scc = "2.1.1"
+spin = "0.9.8"
+
+[dev-dependencies]
+ctrlc = "3.4.4"
